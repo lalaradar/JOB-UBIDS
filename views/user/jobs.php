@@ -1,5 +1,5 @@
 <?php
-require_once 'backend/config/config.php';
+require_once '../../backend/config/config.php';
 
 // ดึงข้อมูลการค้นหา
 $keyword = isset($_GET['keyword']) ? clean($_GET['keyword']) : '';
@@ -43,12 +43,12 @@ $jobs = $stmt->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตำแหน่งงานทั้งหมด - UBIDS Jobs</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/company.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/company.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <?php include 'includes/navbar.php'; ?>
+    <?php include '../includes/navbar.php'; ?>
 
     <div class="container mt-5">
         <h2 class="mb-4">ตำแหน่งงานทั้งหมด</h2>
@@ -140,7 +140,7 @@ $jobs = $stmt->fetchAll();
         <?php endif; ?>
     </div>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../includes/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

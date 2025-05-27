@@ -1,5 +1,5 @@
 <?php
-require_once 'backend/config/config.php';
+require_once '../../backend/config/config.php';
 
 if (isset($_POST['login'])) {
     $username = clean($_POST['username']);
@@ -48,7 +48,7 @@ if (isset($_POST['login'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <?php include 'includes/navbar.php'; ?>
+    <?php include '../includes/navbar.php'; ?>
 
     <div class="container mt-5">
         <div class="row">
@@ -89,7 +89,7 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../includes/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

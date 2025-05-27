@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">UBIDS Jobs</a>
+        <a class="navbar-brand" href="home.php">UBIDS Jobs</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">หน้าแรก</a>
+                    <a class="nav-link" href="home.php">หน้าแรก</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="jobs.php">ตำแหน่งงาน</a>
@@ -39,10 +39,10 @@
                     </li>
                 <?php else: ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.php">สมัครสมาชิก</a>
+                        <a class="nav-link" href="views/user/register.php">สมัครสมาชิก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">เข้าสู่ระบบ</a>
+                        <a class="nav-link" href="views/user/login.php">เข้าสู่ระบบ</a>
                     </li>
                 <?php endif; ?>
             </ul>
